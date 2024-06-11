@@ -129,7 +129,8 @@
 
         .photo-link img {
             width: 100%;
-            height: auto;
+            max-height: 300px; /* Reduce image height */
+            object-fit: cover; /* Ensure the image covers the area without distortion */
             border: 5px solid #4b4b4b;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         }
@@ -137,9 +138,12 @@
         .quote {
             font-size: 1.5em;
             margin: 10px;
-            text-align: center;
             color: #4b4b4b;
             font-style: italic;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100%; /* Center the text vertically */
         }
 
         .personal-message {
@@ -211,7 +215,7 @@
 
             .quote {
                 font-size: 1.5em;
-                text-align: left;
+                text-align: center;
             }
         }
     </style>
