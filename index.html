@@ -18,6 +18,7 @@
             padding: 20px 0;
             text-align: center;
             font-size: 2em;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         }
 
         nav {
@@ -25,6 +26,7 @@
             justify-content: center;
             background-color: #ffffff;
             padding: 10px 0;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
         }
 
         nav a {
@@ -43,7 +45,7 @@
             margin: 20px auto;
             padding: 20px;
             background-color: #ffffff;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         }
 
         footer {
@@ -54,6 +56,7 @@
             position: fixed;
             bottom: 0;
             width: 100%;
+            box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
         }
 
         .photo-link {
@@ -66,6 +69,7 @@
             max-width: 100%;
             height: auto;
             border: 5px solid #4b4b4b;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         }
 
         .personal-message {
@@ -89,6 +93,14 @@
         .contact-info {
             font-size: 1.1em;
         }
+
+        .content-container {
+            background-color: #e6eef5;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            margin-bottom: 40px;
+        }
     </style>
 </head>
 <body>
@@ -105,36 +117,48 @@
 </nav>
 
 <div class="container">
-    <section id="home">
-        <h1>Home</h1>
-        <p class="personal-message">Hello and welcome! I'm Parker Starre, your personal mentor on the journey towards autonomy. Whether you're looking to advance your career, start your own business, or simply live a more independent life, I'm here to guide and support you every step of the way.</p>
-    </section>
-    <section id="about">
-        <h1>About</h1>
-        <p>As a Autonomy Mentor, I believe that true success comes from within. My mission is to empower individuals to take control of their lives and achieve their fullest potential. With years of experience in achieving my own autonomy, I now am helping other individuals unlock their strengths and navigate their paths to independence.</p>
-        <p>My approach is personalized and holistic, focusing not only on professional development but also on personal growth. I provide a safe and supportive environment where you can explore your goals, overcome challenges, and celebrate your achievements.</p>
-    </section>
-    <section id="services">
-        <h1>Services</h1>
-        <p>I offer a range of services designed to meet your unique needs:</p>
-        <ul>
-            <li><strong>One-on-One Coaching:</strong> Personalized sessions tailored to your specific goals and challenges.</li>
-            <li><strong>Workshops:</strong> Interactive workshops on topics such as leadership, entrepreneurship, and personal development.</li>
-            <li><strong>Online Courses:</strong> Flexible and comprehensive courses that you can complete at your own pace.</li>
-            <li><strong>Group Coaching:</strong> Supportive group sessions where you can learn and grow with others on a similar journey.</li>
-        </ul>
-        <p>Each service is designed to provide you with the tools, knowledge, and confidence you need to succeed on your own terms.</p>
-    </section>
-    <section id="contact">
-        <h1>Contact</h1>
-        <p class="contact-info">I would love to hear from you! If you have any questions or would like to schedule a session, please feel free to reach out.</p>
-        <p>Email: <a href="mailto:autonomymentor@gmail.com">autonomymentor@gmail.com</a></p>
-        <p>Phone: (123) 456-7890</p>
-        <p>Follow me on Instagram for daily tips and inspiration: <a href="https://www.instagram.com/autonomymentor/" target="_blank">@autonomymentor</a></p>
-    </section>
+    <div class="content-container">
+        <section id="home">
+            <h1>Home</h1>
+            <p class="personal-message">Hello and welcome! I'm Parker Starre, your personal mentor on the journey towards autonomy. Whether you're looking to advance your career, start your own business, or simply live a more independent life, I'm here to guide and support you every step of the way.</p>
+        </section>
+    </div>
+    
+    <div class="content-container">
+        <section id="about">
+            <h1>About</h1>
+            <p>As an Autonomy Mentor, I believe that true success comes from within. My mission is to empower individuals to take control of their lives and achieve their fullest potential. With years of experience in achieving my own autonomy, I now am helping other individuals unlock their strengths and navigate their paths to independence.</p>
+            <p>My approach is personalized and holistic, focusing not only on professional development but also on personal growth. I provide a safe and supportive environment where you can explore your goals, overcome challenges, and celebrate your achievements.</p>
+        </section>
+    </div>
+    
+    <div class="content-container">
+        <section id="services">
+            <h1>Services</h1>
+            <p>I offer a range of services designed to meet your unique needs:</p>
+            <ul>
+                <li><strong>One-on-One Coaching:</strong> Personalized sessions tailored to your specific goals and challenges.</li>
+                <li><strong>Workshops:</strong> Interactive workshops on topics such as leadership, entrepreneurship, and personal development.</li>
+                <li><strong>Online Courses:</strong> Flexible and comprehensive courses that you can complete at your own pace.</li>
+                <li><strong>Group Coaching:</strong> Supportive group sessions where you can learn and grow with others on a similar journey.</li>
+            </ul>
+            <p>Each service is designed to provide you with the tools, knowledge, and confidence you need to succeed on your own terms.</p>
+        </section>
+    </div>
+    
+    <div class="content-container">
+        <section id="contact">
+            <h1>Contact</h1>
+            <p class="contact-info">I would love to hear from you! If you have any questions or would like to schedule a session, please feel free to reach out.</p>
+            <p>Email: <a href="mailto:autonomymentor@gmail.com">autonomymentor@gmail.com</a></p>
+            <p>Phone: (123) 456-7890</p>
+            <p>Follow me on Instagram for daily tips and inspiration: <a href="https://www.instagram.com/autonomymentor/" target="_blank">@autonomymentor</a></p>
+        </section>
+    </div>
+    
     <div class="photo-link">
         <a href="https://www.instagram.com/autonomymentor/" target="_blank">
-            <img src="parkerautonomy.github.io/IMG_0678.jpeg alt="Autonomy Mentor">
+            <img src="parkerautonomy.github.io/IMG_0678.jpeg" alt="Autonomy Mentor">
         </a>
     </div>
 </div>
