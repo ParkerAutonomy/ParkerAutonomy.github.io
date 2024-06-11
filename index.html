@@ -25,19 +25,22 @@
             text-align: center;
             margin-top: 20px;
             opacity: 0;
-            animation: fadeIn 6s forwards;
+            animation: fadeInOut 6s forwards;
             position: absolute;
             top: 50%;
             left: 50%;
             transform: translate(-50%, -50%);
         }
 
-        @keyframes fadeIn {
-            from {
+        @keyframes fadeInOut {
+            0% {
                 opacity: 0;
             }
-            to {
+            50% {
                 opacity: 1;
+            }
+            100% {
+                opacity: 0;
             }
         }
 
@@ -168,6 +171,27 @@
             box-shadow: 0 4px 16px rgba(0, 0, 0, 0.3); /* Deepen the shadow on hover */
         }
 
+        .photo-contact-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .contact-container {
+            background-color: #e6eef5;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+            margin-top: 20px;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+
+        .contact-container:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 4px 16px rgba(0, 0, 0, 0.3);
+        }
+
         footer {
             text-align: center;
             padding: 10px 0;
@@ -179,6 +203,8 @@
         @media (min-width: 768px) {
             .photo-quote-container {
                 flex-direction: row;
+                justify-content: space-between;
+                align-items: flex-start;
             }
 
             .photo-link img {
@@ -189,6 +215,24 @@
                 font-size: 2em;
                 margin-right: 20px;
                 width: 50%; /* Ensure quote takes up space beside the photo */
+                text-align: left;
+            }
+
+            .photo-contact-container {
+                flex-direction: row;
+                align-items: center;
+                justify-content: space-between;
+                width: 100%;
+            }
+
+            .photo-link img {
+                max-width: 40%;
+            }
+
+            .contact-container {
+                margin-top: 0;
+                margin-left: 20px;
+                flex-grow: 1;
             }
         }
     </style>
@@ -239,21 +283,22 @@
             </section>
         </div>
         
-        <div class="content-container">
-            <section id="contact">
-                <h1>Contact</h1>
-                <p class="contact-info">I would love to hear from you! If you have any questions or would like to schedule a session, please feel free to reach out.</p>
-                <p>Email: <a href="mailto:autonomymentor@gmail.com">autonomymentor@gmail.com</a></p>
-                <p>Phone: (123) 456-7890</p>
-                <p>Follow me on Instagram for daily tips and inspiration: <a href="https://www.instagram.com/autonomymentor/" target="_blank">@autonomymentor</a></p>
-            </section>
-        </div>
-        
         <div class="photo-quote-container">
             <div class="quote">"Kenne is sexy and makes cool websites"</div>
-            <a class="photo-link" href="https://www.instagram.com/autonomymentor/" target="_blank">
-                <img src="IMG_0678.jpeg" alt="Autonomy Mentor">
-            </a>
+            <div class="photo-contact-container">
+                <a class="photo-link" href="https://www.instagram.com/autonomymentor/" target="_blank">
+                    <img src="IMG_0678.jpeg" alt="Autonomy Mentor">
+                </a>
+                <div class="contact-container">
+                    <section id="contact">
+                        <h1>Contact</h1>
+                        <p class="contact-info">I would love to hear from you! If you have any questions or would like to schedule a session, please feel free to reach out.</p>
+                        <p>Email: <a href="mailto:autonomymentor@gmail.com">autonomymentor@gmail.com</a></p>
+                        <p>Phone: (123) 456-7890</p>
+                        <p>Follow me on Instagram for daily tips and inspiration: <a href="https://www.instagram.com/autonomymentor/" target="_blank">@autonomymentor</a></p>
+                    </section>
+                </div>
+            </div>
         </div>
     </div>
 
