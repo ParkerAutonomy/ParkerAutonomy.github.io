@@ -122,7 +122,7 @@
 
         .photo-quote-contact-container > div {
             width: 100%;
-            max-width: 400px; /* Adjusted for better desktop size */
+            max-width: 400px; /* Ensure equal sizing */
             text-align: center;
             margin: 10px;
         }
@@ -202,9 +202,10 @@
         @media (min-width: 768px) {
             .photo-quote-contact-container {
                 flex-direction: row;
+                align-items: flex-start;
             }
 
-            .photo-link img, .quote, .contact-container {
+            .photo-quote-contact-container > div {
                 max-width: 33%;
             }
 
