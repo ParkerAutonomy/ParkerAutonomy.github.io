@@ -121,7 +121,7 @@
         }
 
         .photo-link img {
-            max-width: 70%; /* Adjusted to display the image at a smaller size on desktop */
+            width: 100%; /* Adjusted to display the image at a smaller size on desktop */
             height: auto;
             border: 5px solid #4b4b4b;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -133,6 +133,7 @@
             text-align: center;
             color: #4b4b4b;
             font-style: italic;
+            width: 100%; /* Ensure quote takes up full width */
         }
 
         .personal-message {
@@ -176,6 +177,7 @@
             flex-direction: column;
             align-items: center;
             justify-content: center;
+            width: 100%;
         }
 
         .contact-container {
@@ -185,6 +187,7 @@
             box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
             margin-top: 20px;
             transition: transform 0.2s, box-shadow 0.2s;
+            width: 100%;
         }
 
         .contact-container:hover {
@@ -208,13 +211,13 @@
             }
 
             .photo-link img {
-                max-width: 40%; /* Further reduce image size for desktop */
+                max-width: 30%; /* Reduce image size for desktop */
             }
 
             .quote {
                 font-size: 2em;
                 margin-right: 20px;
-                width: 50%; /* Ensure quote takes up space beside the photo */
+                width: 30%; /* Ensure quote takes up equal space beside the photo */
                 text-align: left;
             }
 
@@ -225,14 +228,10 @@
                 width: 100%;
             }
 
-            .photo-link img {
-                max-width: 40%;
-            }
-
             .contact-container {
                 margin-top: 0;
                 margin-left: 20px;
-                flex-grow: 1;
+                width: 30%; /* Ensure contact container takes up equal space */
             }
         }
     </style>
