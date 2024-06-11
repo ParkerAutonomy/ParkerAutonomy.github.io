@@ -12,11 +12,33 @@
             color: #4b4b4b;
             display: flex;
             justify-content: center;
-            align-items: flex-start;
+            align-items: center;
             height: 100%;
             min-height: 100vh;
             padding: 20px 0;
             box-sizing: border-box;
+        }
+
+        .loader {
+            font-size: 2em;
+            color: #4b4b4b;
+            text-align: center;
+            margin-top: 20px;
+            opacity: 0;
+            animation: fadeIn 6s forwards;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
         }
 
         .main-container {
@@ -29,6 +51,17 @@
             display: none; /* Initially hidden */
             flex-direction: column;
             margin: 20px 0;
+            opacity: 0;
+            animation: fadeInMain 6s forwards;
+        }
+
+        @keyframes fadeInMain {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
         }
 
         header {
@@ -80,6 +113,8 @@
             display: flex;
             justify-content: center;
             margin: 20px 0;
+            flex-direction: column;
+            align-items: center;
         }
 
         .photo-link img {
@@ -87,6 +122,13 @@
             height: auto;
             border: 5px solid #4b4b4b;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .quote {
+            font-size: 1.2em;
+            margin-bottom: 10px;
+            text-align: center;
+            color: #4b4b4b;
         }
 
         .personal-message {
@@ -131,24 +173,6 @@
             background-color: #4b4b4b;
             color: #ffffff;
             box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
-        }
-
-        .loader {
-            font-size: 2em;
-            color: #4b4b4b;
-            text-align: center;
-            margin-top: 20px;
-            opacity: 0;
-            animation: fadeIn 6s forwards;
-        }
-
-        @keyframes fadeIn {
-            from {
-                opacity: 0;
-            }
-            to {
-                opacity: 1;
-            }
         }
     </style>
 </head>
@@ -209,6 +233,7 @@
         </div>
         
         <div class="photo-link">
+            <div class="quote">"Kenne is sexy and makes cool websites"</div>
             <a href="https://www.instagram.com/autonomymentor/" target="_blank">
                 <img src="IMG_0678.jpeg" alt="Autonomy Mentor">
             </a>
