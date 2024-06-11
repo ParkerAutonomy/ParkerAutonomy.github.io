@@ -10,6 +10,25 @@
             font-family: Arial, sans-serif;
             background-color: #c2d3e1;
             color: #4b4b4b;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            height: 100%;
+            min-height: 100vh;
+            padding: 20px 0; /* Add padding to the body to ensure space at the top */
+            box-sizing: border-box;
+        }
+
+        .main-container {
+            width: 90%;
+            max-width: 1200px;
+            background-color: #ffffff;
+            border-radius: 15px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            margin: 20px 0; /* Add margin to create space at the top and bottom */
         }
 
         header {
@@ -41,22 +60,7 @@
         }
 
         .container {
-            max-width: 1200px;
-            margin: 20px auto;
             padding: 20px;
-            background-color: #ffffff;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        }
-
-        footer {
-            text-align: center;
-            padding: 10px 0;
-            background-color: #4b4b4b;
-            color: #ffffff;
-            position: fixed;
-            bottom: 0;
-            width: 100%;
-            box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
         }
 
         .photo-link {
@@ -101,71 +105,82 @@
             box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
             margin-bottom: 40px;
         }
+
+        footer {
+            text-align: center;
+            padding: 10px 0;
+            background-color: #4b4b4b;
+            color: #ffffff;
+            box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+        }
     </style>
 </head>
 <body>
 
-<header>
-    Welcome!
-</header>
+<div class="main-container">
+    <header>
+        Welcome!
+    </header>
 
-<nav>
-    <a href="#home">Home</a>
-    <a href="#about">About</a>
-    <a href="#services">Services</a>
-    <a href="#contact">Contact</a>
-</nav>
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#contact">Contact</a>
+    </nav>
 
-<div class="container">
-    <div class="content-container">
-        <section id="home">
-            <h1>Home</h1>
-            <p class="personal-message">Hello and welcome! I'm Parker Starre, your personal mentor on the journey towards autonomy. Whether you're looking to advance your career, start your own business, or simply live a more independent life, I'm here to guide and support you every step of the way.</p>
-        </section>
+    <div class="container">
+        <div class="content-container">
+            <section id="home">
+                <h1>Home</h1>
+                <p class="personal-message">Hello and welcome! I'm Parker Starre, your personal mentor on the journey towards autonomy. Whether you're looking to advance your career, start your own business, or simply live a more independent life, I'm here to guide and support you every step of the way.</p>
+            </section>
+        </div>
+        
+        <div class="content-container">
+            <section id="about">
+                <h1>About</h1>
+                <p>As an Autonomy Mentor, I believe that true success comes from within. My mission is to empower individuals to take control of their lives and achieve their fullest potential. With years of experience in achieving my own autonomy, I now am helping other individuals unlock their strengths and navigate their paths to independence.</p>
+                <p>My approach is personalized and holistic, focusing not only on professional development but also on personal growth. I provide a safe and supportive environment where you can explore your goals, overcome challenges, and celebrate your achievements.</p>
+            </section>
+        </div>
+        
+        <div class="content-container">
+            <section id="services">
+                <h1>Services</h1>
+                <p>I offer a range of services designed to meet your unique needs:</p>
+                <ul>
+                    <li><strong>One-on-One Coaching:</strong> Personalized sessions tailored to your specific goals and challenges.</li>
+                    <li><strong>Workshops:</strong> Interactive workshops on topics such as leadership, entrepreneurship, and personal development.</li>
+                    <li><strong>Online Courses:</strong> Flexible and comprehensive courses that you can complete at your own pace.</li>
+                    <li><strong>Group Coaching:</strong> Supportive group sessions where you can learn and grow with others on a similar journey.</li>
+                </ul>
+                <p>Each service is designed to provide you with the tools, knowledge, and confidence you need to succeed on your own terms.</p>
+            </section>
+        </div>
+        
+        <div class="content-container">
+            <section id="contact">
+                <h1>Contact</h1>
+                <p class="contact-info">I would love to hear from you! If you have any questions or would like to schedule a session, please feel free to reach out.</p>
+                <p>Email: <a href="mailto:autonomymentor@gmail.com">autonomymentor@gmail.com</a></p>
+                <p>Phone: (123) 456-7890</p>
+                <p>Follow me on Instagram for daily tips and inspiration: <a href="https://www.instagram.com/autonomymentor/" target="_blank">@autonomymentor</a></p>
+            </section>
+        </div>
+        
+        <div class="photo-link">
+            <a href="https://www.instagram.com/autonomymentor/" target="_blank">
+                <img src="parkerautonomy.github.io/IMG_0678.jpeg" alt="Autonomy Mentor">
+            </a>
+        </div>
     </div>
-    
-    <div class="content-container">
-        <section id="about">
-            <h1>About</h1>
-            <p>As an Autonomy Mentor, I believe that true success comes from within. My mission is to empower individuals to take control of their lives and achieve their fullest potential. With years of experience in achieving my own autonomy, I now am helping other individuals unlock their strengths and navigate their paths to independence.</p>
-            <p>My approach is personalized and holistic, focusing not only on professional development but also on personal growth. I provide a safe and supportive environment where you can explore your goals, overcome challenges, and celebrate your achievements.</p>
-        </section>
-    </div>
-    
-    <div class="content-container">
-        <section id="services">
-            <h1>Services</h1>
-            <p>I offer a range of services designed to meet your unique needs:</p>
-            <ul>
-                <li><strong>One-on-One Coaching:</strong> Personalized sessions tailored to your specific goals and challenges.</li>
-                <li><strong>Workshops:</strong> Interactive workshops on topics such as leadership, entrepreneurship, and personal development.</li>
-                <li><strong>Online Courses:</strong> Flexible and comprehensive courses that you can complete at your own pace.</li>
-                <li><strong>Group Coaching:</strong> Supportive group sessions where you can learn and grow with others on a similar journey.</li>
-            </ul>
-            <p>Each service is designed to provide you with the tools, knowledge, and confidence you need to succeed on your own terms.</p>
-        </section>
-    </div>
-    
-    <div class="content-container">
-        <section id="contact">
-            <h1>Contact</h1>
-            <p class="contact-info">I would love to hear from you! If you have any questions or would like to schedule a session, please feel free to reach out.</p>
-            <p>Email: <a href="mailto:autonomymentor@gmail.com">autonomymentor@gmail.com</a></p>
-            <p>Phone: (123) 456-7890</p>
-            <p>Follow me on Instagram for daily tips and inspiration: <a href="https://www.instagram.com/autonomymentor/" target="_blank">@autonomymentor</a></p>
-        </section>
-    </div>
-    
-    <div class="photo-link">
-        <a href="https://www.instagram.com/autonomymentor/" target="_blank">
-            <img src="parkerautonomy.github.io/IMG_0678.jpeg" alt="Autonomy Mentor">
-        </a>
-    </div>
+
+    <footer>
+        &copy; 2024 Parker Starre Mentor. All rights reserved.
+    </footer>
 </div>
-
-<footer>
-    &copy; 2024 Parker Starre Mentor. All rights reserved.
-</footer>
 
 </body>
 </html>
+
