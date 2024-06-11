@@ -114,7 +114,7 @@
 
         .photo-quote-contact-container {
             display: flex;
-            justify-content: space-around;
+            justify-content: center;
             align-items: center;
             margin: 20px 0;
             flex-direction: column;
@@ -129,7 +129,7 @@
 
         .photo-link img {
             width: 100%;
-            max-height: 300px; /* Reduce image height */
+            max-height: 400px; /* Adjust the height */
             object-fit: cover; /* Ensure the image covers the area without distortion */
             border: 5px solid #4b4b4b;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -140,10 +140,7 @@
             margin: 10px;
             color: #4b4b4b;
             font-style: italic;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            height: 100%; /* Center the text vertically */
+            text-align: center;
         }
 
         .personal-message {
@@ -188,6 +185,7 @@
             border-radius: 8px;
             box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
             transition: transform 0.2s, box-shadow 0.2s;
+            text-align: center;
         }
 
         .contact-container:hover {
@@ -205,12 +203,12 @@
 
         @media (min-width: 768px) {
             .photo-quote-contact-container {
-                flex-direction: row;
-                align-items: flex-start;
+                flex-direction: column;
+                align-items: center;
             }
 
             .photo-quote-contact-container > div {
-                max-width: 33%;
+                max-width: 100%;
             }
 
             .quote {
@@ -265,23 +263,24 @@
                 <p>Each service is designed to provide you with the tools, knowledge, and confidence you need to succeed on your own terms.</p>
             </section>
         </div>
-        
+
+        <div class="contact-container">
+            <section id="contact">
+                <h1>Contact</h1>
+                <p class="contact-info">I would love to hear from you! If you have any questions or would like to schedule a session, please feel free to reach out.</p>
+                <p>Email: <a href="mailto:autonomymentor@gmail.com">autonomymentor@gmail.com</a></p>
+                <p>Phone: (123) 456-7890</p>
+                <p>Follow me on Instagram for daily tips and inspiration: <a href="https://www.instagram.com/autonomymentor/" target="_blank">@autonomymentor</a></p>
+            </section>
+        </div>
+
         <div class="photo-quote-contact-container">
-            <div class="quote">"Kenne is sexy and makes cool websites"</div>
             <div class="photo-link">
                 <a href="https://www.instagram.com/autonomymentor/" target="_blank">
                     <img src="IMG_0678.jpeg" alt="Autonomy Mentor">
                 </a>
             </div>
-            <div class="contact-container">
-                <section id="contact">
-                    <h1>Contact</h1>
-                    <p class="contact-info">I would love to hear from you! If you have any questions or would like to schedule a session, please feel free to reach out.</p>
-                    <p>Email: <a href="mailto:autonomymentor@gmail.com">autonomymentor@gmail.com</a></p>
-                    <p>Phone: (123) 456-7890</p>
-                    <p>Follow me on Instagram for daily tips and inspiration: <a href="https://www.instagram.com/autonomymentor/" target="_blank">@autonomymentor</a></p>
-                </section>
-            </div>
+            <div class="quote">"Kenne is sexy and makes cool websites"</div>
         </div>
     </div>
 
