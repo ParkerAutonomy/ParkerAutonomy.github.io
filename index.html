@@ -30,6 +30,7 @@
             top: 50%;
             left: 50%;
             transform: translate(-50%, -50%);
+            cursor: pointer; /* Make the loader text clickable */
         }
 
         @keyframes fadeInOut {
@@ -227,7 +228,7 @@
 </head>
 <body>
 
-<div class="loader">Empowering Independence: Master Your Potential, Own Your Journey!</div>
+<div class="loader" onclick="skipLoader()">Empowering Independence: Master Your Potential, Own Your Journey!</div>
 
 <div class="main-container">
     <header>
@@ -298,11 +299,17 @@
 
 <script>
     document.addEventListener("DOMContentLoaded", function() {
-        setTimeout(function() {
-            document.querySelector('.main-container').style.display = 'flex';
-            document.querySelector('.loader').style.display = 'none';
-        }, 6000); // Delay for 6 seconds
+        setTimeout(showContent, 6000); // Delay for 6 seconds
     });
+
+    function showContent() {
+        document.querySelector('.main-container').style.display = 'flex';
+        document.querySelector('.loader').style.display = 'none';
+    }
+
+    function skipLoader() {
+        showContent();
+    }
 </script>
 
 </body>
